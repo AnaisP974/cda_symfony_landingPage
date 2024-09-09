@@ -1,0 +1,19 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Landing Page{% endblock %}
+
+{% block body %}
+    <main class="bg-gradient-to-r from-neutral-50 to-neutral-100 h-screen flex flex-col items-center justify-center">
+        <div class="text-center">
+            <h1 class="text-5xl font-bold text-neutral-800">
+                Welcome to my Landing Page
+            </h1>
+            <p class="mt-4 text-2xl text-neutral-500">
+                I'm <span class="font-bold text-orange-800">{{ name ?? 'Nobody'}}</span>, a web developer.
+            </p>
+            <p class="mt-4 text-xl text-neutral-500">
+                This is a landing page template for a personal website.
+            </p>
+        </div>
+    </main>
+{% endblock %}
